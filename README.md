@@ -121,7 +121,7 @@ Jenkins is now ready for use!
 
 <img width="990" alt="Screenshot 2023-02-01 at 11 14 13 AM" src="https://user-images.githubusercontent.com/43399466/215961440-3f13f82b-61a2-4117-88bc-0da265a67fa7.png">
 
-## Install the Docker Pipeline plugin in Jenkins:
+## Step 3: Configure Docker in Jenkins
 
    - Log in to Jenkins.
    - Go to Manage Jenkins > Manage Plugins.
@@ -134,16 +134,18 @@ Jenkins is now ready for use!
 Wait for the Jenkins to be restarted.
 
 
-## Docker Slave Configuration
-
-Run the below command to Install Docker
+### 3.1 Install Docker
+> Docker Slave Configuration
+Run the following commands to install Docker:
 
 ```
 sudo apt update
 sudo apt install docker.io
 ```
  
-### Grant Jenkins user and Ubuntu user permission to docker deamon.
+### 3.2 Grant Permissions
+
+Grant necessary permissions to Jenkins and Ubuntu users:
 
 ```
 sudo su - 
@@ -152,14 +154,52 @@ usermod -aG docker ubuntu
 systemctl restart docker
 ```
 
-Once you are done with the above steps, it is better to restart Jenkins.
+### 3.3 Restart Jenkins
+
+Restart Jenkins to apply changes:
 
 ```
 http://<ec2-instance-public-ip>:8080/restart
 ```
 
-The docker agent configuration is now successful.
+> The docker agent configuration is now successful.
 
 
+### 3.4 Install Docker Pipeline Plugin
+
+1. Log in to Jenkins.
+
+2. Navigate to Manage Jenkins > Manage Plugins.
+
+3. Search for "Docker Pipeline" in the Available tab.
+
+4. Install the plugin and restart Jenkins.
+
+
+## Step 4: Set Up CI/CD Pipeline
+
+- Configure Jenkins pipelines to build, test, and deploy applications.
+
+- Integrate version control systems like Git for automated builds.
+
+- Define the pipeline stages in a Jenkinsfile for consistent builds.
+
+
+## Step 5: Deploy to Kubernetes
+
+1. Use Argo CD to implement GitOps for Kubernetes deployments:
+
+2. Install and configure Argo CD.
+
+3. Define application manifests in Git repositories.
+
+4. Use Argo CD to synchronize changes from Git to Kubernetes.
+
+
+## About
+
+This project demonstrates how to install Jenkins, configure Docker as an agent, set up a CI/CD pipeline, and deploy applications to Kubernetes using Argo CD in a GitOps way.
+
+> For more information, refer to the official documentation of Jenkins, Docker, and Argo CD.
 
 
