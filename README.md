@@ -113,7 +113,7 @@ Wait for the plugins to install.
 <img width="1291" alt="Screenshot 2023-02-01 at 10 59 31 AM" src="https://user-images.githubusercontent.com/43399466/215959398-344b5721-28ec-47a5-8908-b698e435608d.png">
 
 Create an admin user or skip to proceed with the default setup.
-[If you want to use this Jenkins instance for future use-cases as well, better to create admin user]
+> If you want to use this Jenkins instance for future use-cases as well, better to create admin user
 
 <img width="990" alt="Screenshot 2023-02-01 at 11 02 09 AM" src="https://user-images.githubusercontent.com/43399466/215959757-403246c8-e739-4103-9265-6bdab418013e.png">
 
