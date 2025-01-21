@@ -18,6 +18,8 @@ This guide walks you through the steps to:
 
 ---
 
+
+
 ## Step 1: Set Up AWS EC2 Instance
 
 1. Log in to your [AWS Console](https://aws.amazon.com/).
@@ -27,6 +29,8 @@ This guide walks you through the steps to:
 <img width="994" alt="Screenshot 2023-02-01 at 12 37 45 PM" src="https://user-images.githubusercontent.com/43399466/215974891-196abfe9-ace0-407b-abd2-adcffe218e3f.png">
 
 ---
+
+
 
 ## Step 2: Install Jenkins
 
@@ -121,6 +125,8 @@ Jenkins is now ready for use!
 
 <img width="990" alt="Screenshot 2023-02-01 at 11 14 13 AM" src="https://user-images.githubusercontent.com/43399466/215961440-3f13f82b-61a2-4117-88bc-0da265a67fa7.png">
 
+
+
 ## Step 3: Configure Docker in Jenkins
 
    - Log in to Jenkins.
@@ -176,6 +182,7 @@ http://<ec2-instance-public-ip>:8080/restart
 4. Install the plugin and restart Jenkins.
 
 
+
 ## Step 4: Set Up CI/CD Pipeline
 
 - Configure Jenkins pipelines to build, test, and deploy applications.
@@ -183,6 +190,7 @@ http://<ec2-instance-public-ip>:8080/restart
 - Integrate version control systems like Git for automated builds.
 
 - Define the pipeline stages in a Jenkinsfile for consistent builds.
+
 
 
 ## Step 5: Deploy to Kubernetes
@@ -200,6 +208,6 @@ http://<ec2-instance-public-ip>:8080/restart
 
 This project demonstrates how to install Jenkins, configure Docker as an agent, set up a CI/CD pipeline, and deploy applications to Kubernetes using Argo CD in a GitOps way.
 
-> For more information, refer to the official documentation of Jenkins, Docker, and Argo CD.
+> For more information, refer to the official documentation of [Jenkins](https://www.jenkins.io/doc/), [Docker](https://docs.docker.com/), and [Argo CD](https://argo-cd.readthedocs.io/en/stable/).
 
 
