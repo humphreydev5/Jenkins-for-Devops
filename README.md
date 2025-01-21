@@ -92,9 +92,9 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 2. Enter the password on the Jenkins setup page.
 
-` Note: If you are not interested in allowing `All Traffic` to your EC2 instance
+> Note: If you are not interested in allowing `All Traffic` to your EC2 instance
       1. Delete the inbound traffic rule for your instance
-      2. Edit the inbound traffic rule to only allow custom TCP port `8080` `
+      2. Edit the inbound traffic rule to only allow custom TCP port `8080` 
   
 After you login to Jenkins, 
       - Run the command to copy the Jenkins Admin Password - `sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
