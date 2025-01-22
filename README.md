@@ -1,5 +1,8 @@
 # Jenkins Setup with Docker, CI/CD, and Kubernetes Deployment
 
+![piclumen-1737520555383](https://github.com/user-attachments/assets/c174ca82-2d23-45af-97fe-34ff70816001)
+
+
 ## Overview
 
 This guide walks you through the steps to:
